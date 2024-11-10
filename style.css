@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background-color: #f2f4f7;
+    font-family: sans-serif;
+    align-content: center;
+}
+main{
+    width: 75%;
+    height: 80vh;
+    background-color: #f2f4f7;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+main .left{
+    width: 50%;
+    height: 70vh;
+    align-content: center;
+    text-align: start;
+    /* background-color: blanchedalmond; */
+}
+main img{
+   width: 65%;
+}
+main h3{
+   font-size: 27px;
+   padding-left: 7.3%;
+   font-weight: normal;
+}
+
+/* RIGHT */
+main .right{
+    width: 50%;
+    height: 80vh;
+    align-content: center;
+    text-align: center;
+    /* background-color: red; */
+}
+/* INPUT SECTION */
+.input-section{
+    margin: auto;
+    width: 70%;
+    height: 55vh;
+    text-align: center;
+    align-content: center;
+    background-color: #ffff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+      
+}
+.input-section input{
+    width: 100%;
+    height: 8vh;
+    color: #DDDFE2;
+    border-radius: 7px;
+    padding-left: 5%;
+    font-size: 16px;
+    border: 1px solid #DDDFE2;
+}
+#pass-word{
+    margin-top: 3%;
+}
+#login{
+    margin-top: 4%;
+    padding: 3% 42%;
+    color: white;
+    text-align: center;
+    background-color: #0866FF;
+    border-radius: 6px;
+    border: 0;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.input-section p{
+    padding-top: 5%;
+    text-align: center;
+    color: #0866FF;
+    font-size: 14px;
+    font-weight: normal;
+}
+.input-section a{
+    text-decoration: none;
+}
+.divider{
+    margin-top: 6%;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+#green-btn{
+    margin-top: 7%;
+    padding: 3.5% 4%;
+    color: white;
+    text-align: center;
+    background-color: #42B72A;
+    border-radius: 7px;
+    border: 0;
+    font-size: 15px;
+    /* font-weight: bolder; */
+}
+.create-page{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    height: 10vh;
+    align-content: center;
+    /* background-color: #42B72A; */
+}
+.right p{
+    font-size: 14px;
+    padding-left: 10%;
+}
+.right a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    main .left, 
+    main .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    main img {
+        width: 50%;
+    }
+
+    main h3 {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .input-section {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    button, #green-btn {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 428px) {
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    main .left, 
+    main .right {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    main img {
+        width: 60%;
+    }
+
+    main h3 {
+        font-size: 1.3rem;
+    }
+
+    .input-section {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #login{
+        padding: 3% 40%;
+    }
+    button, #green-btn {
+        font-size: 1rem;
+        padding: 13px 0;
+    }
+    #green-btn{
+        padding: 4% 5%;
+    }
+
+    .input-section input {
+        height: 7vh;
+        font-size: 14px;
+    }
+
+    .right p {
+        font-size: 12px;
+        padding-left: 0;
+    }
+}

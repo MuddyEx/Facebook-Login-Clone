@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yx/r/e9sqr8WnkCf.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook - log in or sign  up</title>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook Logo">
+            <h3>Facebook helps you connect and share <br> with the people in your life.</h3>
+        </div>
+        <div class="right">
+            <div class="input-section">
+                <form id="loginForm" onsubmit="submitForm(event)">
+                    <input type="text" id="email" name="email" placeholder="Email address or phone number" required> <br> <br>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button id="login" type="submit">Log in</button>
+                    <p id="error-message" style="color: red; display: none;">Wrong username or password</p>
+                </form>
+                <a href="#"><p>Forgotten password?</p></a>
+                <div class="divider"></div>
+                <button id="green-btn">Create new account</button>
+            </div>
+            <div class="create-page">
+                <p><a href="#">Create a Page </a>for a celebrity, brand or business.</p>
+            </div>
+        </div>  
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
